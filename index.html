@@ -29,27 +29,50 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a name="moka-app" class="anchor" href="#moka-app"><span class="octicon octicon-link"></span></a>About Moka</h1>
+            <a name="moka-app" class="anchor" href="#moka-app"><span class="octicon octicon-link"></span></a>About Moka
+          </h1>
 
-<ul>
-  <li>An Android application to revolutionize in-room collaboration.</li>
-  <li>A JavaScript-based output platform for beautiful realtime rendering.</li>
-  <li>A Java/Jade-based backend server for the heavy computation and accross devices synchronization.</li>
-  <li>A powerful Java/Jade-based backend server for the heavy computation and across devices synchronization.</li>
-</ul>
+          <ul>
+            <li>An Android application to revolutionize in-room collaboration.</li>
+            <li>A JavaScript-based output platform for beautiful realtime rendering.</li>
+            <li>A Java/Jade-based backend server for the heavy computation and accross devices synchronization.</li>
+            <li>A powerful Java/Jade-based backend server for the heavy computation and across devices synchronization.</li>
+          </ul>
 
-<h1>
-<a name="credits-and-license" class="anchor" href="#credits-and-license"><span class="octicon octicon-link"></span></a>Credits and License</h1>
+          <h1>
+            <a name="credits-and-license" class="anchor" href="#credits-and-license"><span class="octicon octicon-link"></span></a>Credits and License
+          </h1>
 
-<p>Credits go to Thomas Barthélémy <a href="https://github.com/tbarthel-fr">https://github.com/tbarthel-fr</a>, Vincent Barthélémy <a href="https://github.com/vbarthel-fr">https://github.com/vbarthel-fr</a>,
-Thomas Keunebroek <a href="https://github.com/tkeunebr">https://github.com/tkeunebr</a> and Alexandre Masciulli <a href="https://github.com/amasciul">https://github.com/amasciul</a>.</p>
+          <p>
+            Credits go to Thomas Barthélémy <a href="https://github.com/tbarthel-fr">https://github.com/tbarthel-fr</a>, Vincent Barthélémy <a href="https://github.com/vbarthel-fr">https://github.com/vbarthel-fr</a>, Thomas Keunebroek <a href="https://github.com/tkeunebr">https://github.com/tkeunebr</a> and Alexandre Masciulli <a href="https://github.com/amasciul">https://github.com/amasciul</a>.
+          </p>
 
-<p>Licensed under the Beerware License :</p>
+          <p>Licensed under the Beerware License :</p>
 
-<pre>
-You can do whatever you want with this stuff.
-If we meet some day, and you think this stuff is worth it, you can buy me/us a beer in return.
-</pre>
+          <pre>You can do whatever you want with this stuff.<br>If we meet some day, and you think this stuff is worth it, you can buy me/us a beer in return.
+          </pre>
+
+          <h1>
+            <a name="Public API" class="anchor" href="#api"><span class="octicon octicon-link"></span></a>Public API
+          </h1>
+
+          <p>
+            Moka has a public API for you to be able to interact and make requests with our very own system. We use a RESTful-based server architecture, allowing you to make the following requests:
+          </p>
+          <ul>
+            <li>
+              <pre style="display:inline-block;">@GET /user/list.<br>Returns the list of users currently connected to the system.</pre>
+            </li>
+            <li>
+              <pre style="display:inline-block;">@GET /item/list.<br>Returns the list of items currently added to the system.</pre>
+            </li>
+            <li>
+              <pre style="display:inline-block;">@GET /history/list.<br>Returns the list of every action that occured in the system.</pre>
+            </li>
+          </ul>
+          <p>
+            Please note that we currently only support JSON format, but we totally plan to support other formats in a very near future.
+          </p>
         </section>
 
         <aside id="sidebar">
@@ -57,7 +80,6 @@ If we meet some day, and you think this stuff is worth it, you can buy me/us a b
         </aside>
       </div>
     </div>
-
 
   </body>
 </html>
