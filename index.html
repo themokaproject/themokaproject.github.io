@@ -56,6 +56,12 @@
             <li>
               <pre style="display:inline-block;">@GET $SERVER_IP/api/history/list<br>Returns the list of every action that occured in the system.</pre>
             </li>
+            <li>
+              <pre style="display:inline-block;">@POST $SERVER_IP/api/item/{id}/image<br>Allows to add an image resource (.jpg format) for the item<br>at the given {id}.</pre>
+            </li>
+            <li>
+              <pre style="display:inline-block;">@GET $SERVER_IP/api/item/{id}/image<br>Returns the image of the item whose id is {id}.</pre>
+            </li>
           </ul>
           <p>
             Please note that we currently only support JSON format, but we totally plan to support other formats in a very near future.
